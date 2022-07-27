@@ -1,15 +1,12 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static List<String> dictionary = new ArrayList<>();
+    public static Set<String> dictionary = new HashSet<>();
 
-    public static void printDictionary(List<String> list){
+    public static void printDictionary(Set<String> set){
         System.out.println("Список всех слов в словаре: ");
-        list.stream()
+        set.stream()
                 .forEach(System.out::println);
     }
 
